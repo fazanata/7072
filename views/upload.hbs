@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловое хранилище - {{title}}</title>
+</head>
+<body>
+    <div>
+        {{> menu}}
+    </div>
+    <hr>
+    <div>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="filedata" >
+        <button type="submit">
+            {{buttonName}}
+        </button>
+    </form>
+    </div>
+</body>
+</html>

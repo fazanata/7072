@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловое хранилище - {{title}}</title>
+</head>
+<body>
+    <div>
+        {{> menu}}
+    </div>
+    <hr>
+    <h4>Добро пожаловать!</h4>
+    <div>
+        {{description}}
+    </div>
+    <div>
+        <ul>
+            {{#each links}}
+            <li><a href="/files/{{this}}" title="{{this}}" download="">{{this}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</body>
+</html>
